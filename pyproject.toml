@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "kodkod"
+version = "0.1.0"
+description = "An Agile Pre-Commit Guardian"
+authors = ["Alex Chih <alex.ch.chih@viewsonic.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+check-commit-message = "kodkod.pre_commit_hooks.check_commit_message:main"

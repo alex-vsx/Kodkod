@@ -1,0 +1,6 @@
+- id: check-commit-message
+  name: Check for ClickUp ticket ID
+  description: Check for ClickUp ticket ID in commit message
+  entry: check-commit-message
+  language: python
+  stages: [commit-msg, push]
